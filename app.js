@@ -69,7 +69,7 @@ function checkSequence(idx)
         console.log("Lost the game..");
         let p = document.createElement("p");
         document.querySelector("body").append(p);
-        p.innerHTML = `Your highest score is <b>${highestScore}</b>`;
+        p.innerText = `Your highest score is ${highestScore}`;
         h2.innerHTML = `Game Over! Your score was ${level} . <br> Press any key to start`;
         h2.style.color = "red";
         reset();
